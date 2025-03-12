@@ -1,0 +1,9 @@
+<h2>Save & Compress</h2>
+<p>Plugin is working!</p>
+<button id="close">Close</button>
+
+<script>
+document.getElementById('close').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'close' } }, '*');
+};
+</script>
