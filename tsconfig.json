@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": ["es6", "dom"],
+    "lib": ["es6"],
     "moduleResolution": "node",
-    "outDir": "dist",
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "jsxFactory": "h"
+    "typeRoots": [
+      "./node_modules/@figma"
+    ],
+    "skipLibCheck": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "outDir": "dist"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts"]
 }
